@@ -1,20 +1,20 @@
 topbar_navigation:
   - title: Dashboard
-    url: 'index.html'
+    url: '/index'
   - title: Vehicles
-    url: 'vehicles.html'
+    url: '/vehicles'
   - title: Boxes
-    url: 'boxes.html'
+    url: '/boxes'
   - title: Shipments
-    url: 'shipments.html'
+    url: '/shipments'
 
 topbar_navigation_right:
   - title: Payments
-    url: 'payments.html'
+    url: '/payments'
   - title: Reports
-    url: 'reports.html'
+    url: '/reports'
   - title: Statements
-    url: 'statements.html'
+    url: '/statements'
 
 elements_navigation:
   - title: Colors
