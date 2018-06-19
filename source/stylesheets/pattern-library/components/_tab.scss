@@ -50,7 +50,7 @@ $tab-list-link-color-dark:           $white-base;
   // Tab Nav Item
   &__item {
     @include font-type($primary-sans-serif, normal, 400);
-    @include position($tab-list-item-position);
+    position: $tab-list-item-position;
     @include s-foxtrot;
     color: $tab-list-item-color;
     cursor: pointer;
@@ -60,7 +60,8 @@ $tab-list-link-color-dark:           $white-base;
     text-align: $tab-list-item-align;
 
     &::before {
-      @include position($tab-list-link-position, $tab-list-link-cords);
+      position: $tab-list-link-position;
+      bottom: -6px;
       background-color: $tab-list-link-bg;
       content: " ";
       display: block;

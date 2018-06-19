@@ -42,7 +42,8 @@ $app-topbar-mobile-menu-transition: all 0.5s ease;
 
 // Structure
 .application-topbar {
-  @include position($app-topbar-position, 0 null null null);
+  position: $app-topbar-position;
+  top: 0;
   background-color: $app-topbar-bg;
   box-shadow: $app-topbar-box-shadow;
   padding: $app-topbar-padding-sm;
@@ -87,7 +88,7 @@ $app-topbar-mobile-menu-transition: all 0.5s ease;
   }
 
   .application-topbar__item {
-    @include position($app-topbar-item-position);
+    position: $app-topbar-item-position;
     display: $app-topbar-display;
     margin-top: $app-topbar-item-margin-t;
     margin-right: $app-topbar-item-margin-r;
@@ -106,7 +107,8 @@ $app-topbar-mobile-menu-transition: all 0.5s ease;
     color: $app-topbar-link-color-active;
 
     &::after {
-      @include position($app-topbar-link-border-position, $app-topbar-link-border-cords);
+      position: $app-topbar-link-border-position;
+      bottom: -28px;
       background-color: $app-topbar-link-border-bg;
       content: " ";
       display: $app-topbar-link-border-display;
