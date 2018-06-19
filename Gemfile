@@ -16,7 +16,7 @@ gem 'wdm', '~> 0.1', platforms: [:mswin, :mingw]
 # Added Gems
 gem 'bourbon'
 gem 'neat', '~>1.7.4'
-gem 'nokogiri'
+gem 'nokogiri', '~>1.8.2'
 
 # Bower Packages
 source 'https://rails-assets.org' do
