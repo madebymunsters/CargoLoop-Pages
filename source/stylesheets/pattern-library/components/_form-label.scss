@@ -24,11 +24,16 @@ $form-label-success-color:  $green-base;
 label,
 .form__label {
   @extend .text--bold;
-  @include s-golf;
+  @include s-foxtrot;
   color: $form-label-color;
   display: $form-label-display;
   margin-bottom: $form-label-margin;
   text-transform: $form-label-transform;
+  span {
+    &.required {
+      color: $form-label-error-color;
+    }
+  }
 }
 
 // Offset if label is not present

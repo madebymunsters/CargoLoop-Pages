@@ -1,13 +1,13 @@
 <header role="banner" class="application-topbar">
-  <nav role="navigation" class="container">
+  <nav role="navigation">
     <div class="row">
       <div class="columns-4__s columns-9__m columns-12__l">
         <div class="application-topbar__left">
           <% link_to "#{config[:root_url] ? config[:root_url] : '/'}", class: 'application-topbar__link' do %>
-            <%= image_tag 'images/logos/logo-color.png', alt: 'BakeSmart Logo', class: 'logo' %>
+            <%= image_tag 'images/logos/cl_logo@2x.jpg', alt: 'CargoLoop Logo', class: 'logo' %>
           <% end %>
         </div>
-        <div class="application-topbar__right">
+        <div class="application-topbar__middle">
           <ul class="application-topbar__list">
             <% data.page_navigation.topbar_navigation.each do |i| %>
               <li class="application-topbar__item">
@@ -15,6 +15,24 @@
               </li>
             <% end %>
           </ul>
+          <% link_to '#', class: 'application-topbar__link' do %>
+            <%= inline_svg('images/icons/icons-functional/icon-menu.svg', alt: 'Menu icon', class: 'application-topbar__mobile-trigger') %>
+          <% end %>
+        </div>
+        <div class="application-topbar__right">
+          <ul class="application-topbar__list">
+            <% data.page_navigation.topbar_navigation_right.each do |i| %>
+              <li class="application-topbar__item">
+                <%= link_to i.title, i.url, class: 'application-topbar__link application-top__scroll-link' %>
+              </li>
+            <% end %>
+          </ul>
+          <!-- Chip Base -->
+          <div class="chip__container">
+            <div class="chip__avatar">
+              <h5 class="chip__avatar-text">MB</h5>
+            </div>
+          </div>
           <% link_to '#', class: 'application-topbar__link' do %>
             <%= inline_svg('images/icons/icons-functional/icon-menu.svg', alt: 'Menu icon', class: 'application-topbar__mobile-trigger') %>
           <% end %>

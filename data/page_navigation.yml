@@ -1,12 +1,20 @@
 topbar_navigation:
-  - title: Elements
-    url: '#elements'
-  - title: Components
-    url: '#components'
-  - title: Layout
-    url: '#layout'
-  - title: Resources
-    url: '#resources'
+  - title: Dashboard
+    url: 'index.html'
+  - title: Vehicles
+    url: 'vehicles.html'
+  - title: Boxes
+    url: 'boxes.html'
+  - title: Shipments
+    url: 'shipments.html'
+
+topbar_navigation_right:
+  - title: Payments
+    url: 'payments.html'
+  - title: Reports
+    url: 'reports.html'
+  - title: Statements
+    url: 'statements.html'
 
 elements_navigation:
   - title: Colors
