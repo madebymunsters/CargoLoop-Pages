@@ -1,115 +1,20 @@
 ---
-title: CargoLoop - Pattern Library
+title: CargoLoop - Dashboard
 ---
-<header aria-labelledby="welcome-message" class="page__section">
-  <div class="container">
-    <div class="guide__section-header">
-      <h1 id="welcome-message" class="header--primary">CargoLoop's Pattern Library</h1>
-      <p>Welcome to CargoLoop's pattern library. A component-driven library that's core focus is to provide developers and designers with the necessary pieces to build and maintain the evolving interface. The library consists of four main pieces: elements, components, layout and resources. Similar to CargoLoop's interface, the pattern library will continue to grow and evolve as new elements are needed.</p>
-    </div>
+
+<header class="page--header">
+  <div class="page--title">
+    <h3>Dashboard</h3>
   </div>
 </header>
-<!-- Elements -->
-<section role="region" aria-label="CargoLoop Pattern Library Elements" id="elements" class="guide__section">
-  <header class="guide__section-header">
-    <h2>Elements</h2>
-  </header>
-  <div class="row">
-    <div class="guide__section-content">
-      <%= partial 'elements/colors' %>
-    </div>
-    <aside role="complementary" class="guide__section-aside">
-      <nav role="navigation">
-        <label class="margin-bottom--delta">Section Navigation</label>
-        <ul>
-          <% data.page_navigation.elements_navigation.each do |i| %>
-            <li>
-              <%= link_to i.title, i.url %>
-            </li>
-          <% end %>
-        </ul>
-      </nav>
-    </aside>
+
+<%= partial 'layouts/partials/dashboard/action-items' %>
+
+<div class="row">
+  <div class="columns-9__m columns-8__l">
+    <%= partial 'layouts/partials/dashboard/overview' %>
   </div>
-</section>
-<!-- Components -->
-<section role="region" aria-label="CargoLoop Pattern Library Components" id="components" class="guide__section">
-  <header class="guide__section-header">
-    <h2>Components</h2>
-  </header>
-  <div class="row">
-    <div class="guide__section-content">
-      <%= partial 'components/alerts' %>
-      <%= partial 'components/badges' %>
-      <%= partial 'components/buttons' %>
-      <%= partial 'components/cards' %>
-      <%= partial 'components/chips' %>
-      <%= partial 'components/form-elements' %>
-      <%= partial 'components/links' %>
-      <%= partial 'components/loading-indicator' %>
-      <%= partial 'components/modals' %>
-      <%= partial 'components/popouts' %>
-      <%= partial 'components/tabs' %>
-      <%= partial 'components/tooltips' %>
-    </div>
-    <aside role="complementary" class="guide__section-aside">
-      <nav role="navigation">
-        <label class="margin-bottom--delta">Section Navigation</label>
-        <ul>
-          <% data.page_navigation.components_navigation.each do |i| %>
-            <li>
-              <%= link_to i.title, i.url %>
-            </li>
-          <% end %>
-        </ul>
-      </nav>
-    </aside>
+  <div class="columns-3__m columns-4__l">
+    <%= partial 'layouts/partials/dashboard/messages' %>
   </div>
-</section>
-<!-- Layout -->
-<section role="region" aria-label="CargoLoop Pattern Library Layout" id="layout" class="guide__section">
-  <header class="guide__section-header">
-    <h2>Layout</h2>
-  </header>
-  <div class="row">
-    <div class="guide__section-content">
-      <%= partial 'layout/grid' %>
-      <%= partial 'layout/offsets' %>
-    </div>
-    <aside role="complementary" class="guide__section-aside">
-      <nav role="navigation">
-        <label class="margin-bottom--delta">Section Navigation</label>
-        <ul>
-          <% data.page_navigation.layout_navigation.each do |i| %>
-            <li>
-              <%= link_to i.title, i.url %>
-            </li>
-          <% end %>
-        </ul>
-      </nav>
-    </aside>
-  </div>
-</section>
-<!-- Resources -->
-<section role="region" aria-label="CargoLoop Pattern Library Resources" id="resources" class="guide__section">
-  <header class="guide__section-header">
-    <h2>Resources</h2>
-  </header>
-  <div class="row">
-    <div class="guide__section-content">
-      <%= partial 'resources/icons' %>
-    </div>
-    <aside role="complementary" class="guide__section-aside">
-      <nav role="navigation">
-        <label class="margin-bottom--delta">Section Navigation</label>
-        <ul>
-          <% data.page_navigation.resources_navigation.each do |i| %>
-            <li>
-              <%= link_to i.title, i.url %>
-            </li>
-          <% end %>
-        </ul>
-      </nav>
-    </aside>
-  </div>
-</section>
+</div>

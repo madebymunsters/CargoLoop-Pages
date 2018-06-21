@@ -1,0 +1,49 @@
+.one__fifth {
+  width: 19.75%;
+  padding: 0 1%;
+  display: inline-block;
+  vertical-align: top;
+
+  .action--blue {
+    border-top: 3px solid $blue-light;
+    text-align: center;
+  }
+  h5 {
+    color: $blue-light;
+    font-size: $s-bravo;
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: $s-delta;
+    margin-bottom: 0px;
+    line-height: 1.2;
+  }
+}
+
+.overview {
+  ul {
+    li {
+      display: block;
+      padding: 15px 0;
+      border-bottom: 1px solid $grey-light;
+      &:last-child {
+        border-bottom: none;
+      }
+      > div {
+        float: right;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.messages {
+  margin-top: 20px;
+  .row {
+    padding: 15px 0 0;
+    border-bottom: 1px solid $grey-light;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
