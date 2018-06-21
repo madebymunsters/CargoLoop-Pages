@@ -83,6 +83,7 @@
             <div class="form-group">
               <label>Purchase Price<span class="required">*</span></label>
               <input type="text" placeholder="Placeholder text" />
+              <small>Vehicle purchase price is required for Shippers Export Declaration (SED). Please enter the actual purchase price, which will be used for preparation of export documents only. This price will not be publicly disclosed or announced, it will remain secure and private.</small>
             </div>
           </div>
           <div class="columns-2__s columns-6__l">
@@ -101,45 +102,49 @@
               <textarea></textarea>
             </div>
 
-            <div class="form-group">
+            <div class="form-group-button">
               <label>Consolidate Shipment</label><br/>
                 <input type="checkbox" />
                 Yes, Consolidate Shipment
             </div>
 
-            <div class="form-group">
+            <div class="form-group-button">
               <label>Payment Type</label><br/>
                 <input type="radio" />
                 Shipper Payment
-                <input type="radio" />
-                Client Payment
+                <input class="margin-left" type="radio" />
+                Client Payment<br/>
+                <small>Please indicate when this vehicles will by paid to the seller. The shipping company will plan the vehicle pickup based on this date.</small>
             </div>
 
-            <div class="form-group">
+
+            <div class="form-group-button">
               <label>Marine Insurance</label><br/>
                 <input type="radio" />
                 Yes
-                <input type="radio" />
-                No
+                <input class="margin-left" type="radio" />
+                No<br/>
+                <small>Marine Insurance covers all accidents and damages of your vehicle while in transit to the port of discharge. The cost is 1% of vehicle value. If you select "YES", you will be contacted by the shipper's insurance agent. If you select "NO", you agree to the Marine Insurance Waiver. For more details, please <a href="#" class="link--danger">click here</a>.</small>
             </div>
 
-            <div class="form-group">
+
+            <div class="form-group-button">
               <label>Keys</label><br/>
                 <input type="radio" />
                 Keys Present
-                <input type="radio" />
+                <input class="margin-left" type="radio" />
                 Keys Missing
-                <input type="radio" />
+                <input class="margin-left" type="radio" />
                 Not Inspected
             </div>
 
-            <div class="form-group">
+            <div class="form-group-button">
               <label>Operable</label><br/>
                 <input type="radio" />
                 Yes
-                <input type="radio" />
+                <input class="margin-left" type="radio" />
                 No
-                <input type="radio" />
+                <input class="margin-left" type="radio" />
                 Not Inspected
             </div>
 

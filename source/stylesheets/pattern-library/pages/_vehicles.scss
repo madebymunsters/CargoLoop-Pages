@@ -49,3 +49,15 @@ header {
     }
   }
 }
+
+footer {
+  &.page--footer {
+    margin: 0;
+    padding: 0 $spacer-delta;
+    .page--actions {
+      float: right;
+      display: inline-block;
+      margin-bottom: $spacer-charlie;
+    }
+  }
+}

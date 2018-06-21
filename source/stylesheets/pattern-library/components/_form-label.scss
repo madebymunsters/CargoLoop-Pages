@@ -56,3 +56,12 @@ label,
 .input--success {
   color: $form-label-success-color;
 }
+
+.form-group-button {
+  margin: 0 0 20px 0;
+  > input[type="radio"] {
+    &.margin-left {
+      margin-left: 20px;
+    }
+  }
+}
