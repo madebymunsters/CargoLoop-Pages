@@ -169,4 +169,57 @@ $tooltip-text-shadow-spread: 0 5px 10px;
     text-transform: none;
     color: $white-base;
   }
+  &.white {
+    background-color: $white-base;
+    left: calc(100% - 100px);
+    width: 400px;
+    height: 120px;
+    &__list {
+      color: $black-base;
+    }
+    &.down {
+      &:before{
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        position: absolute;
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid $white-base;
+        border-left: 8px solid transparent;
+        left: 15px;
+        top: -15px;
+        border-right: 8px solid transparent;
+      }
+    }
+  }
+  &__list {
+    float: left;
+    display: inline-block;
+  }
+  &__category {
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+    li {
+      font-size: 11px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+  }
+  &__desc {
+    display: inline-block;
+    float: left;
+    font-size: 11px;
+    li {
+      font-size: 11px;
+      font-weight: normal;
+      margin-bottom: 10px;
+    }
+  }
+  &__img {
+    float: left;
+    display: inline-block;
+    margin-right:10px;
+  }
 }
