@@ -31,6 +31,22 @@ table {
           font-weight: 600;
           border-bottom: 1px dotted $black-base;
         }
+        &.problem__late {
+          background: rgba($red-base,0.15);
+          border-left: 3px solid $red-base;
+          color: $red-base;
+        }
+        &.problem__missing {
+          background: rgba($purple-base,0.15);
+          border-left: 3px solid $purple-base;
+          color: $purple-base;
+        }
+        > input[type="text"] {
+          height: 20px;
+          width: 40px;
+          font-size: 11px;
+          margin: 0;
+        }
       }
     }
   }

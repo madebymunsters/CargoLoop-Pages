@@ -22,7 +22,7 @@ $tooltip-icon-fill:          $black-base;
 $tooltip-icon-position:      absolute;
 $tooltip-icon-size:          15px;
 
-$tooltip-text-color:         $black-base;
+$tooltip-text-color:         $white-base;
 $tooltip-text-line-height:   normal;
 $tooltip-text-shadow-color:  rgba(0, 0, 0, 0.15);
 $tooltip-text-shadow-spread: 0 5px 10px;
@@ -32,18 +32,100 @@ $tooltip-text-shadow-spread: 0 5px 10px;
 .tooltip {
   @extend .card--shadow;
   @extend .card--md;
+  background-color: $black-base;
   position: $tooltip-position;
   bottom: 20px;
   opacity: $tooltip-opacity-0;
-  right: calc(100% - 235px);
   transition: $tooltip-transition;
   visibility: hidden;
   width: $tooltip-width-sm;
   z-index: $tooltip-z-index;
+  &.right {
+    right: calc(100% - 405px);
+    top: 0px;
+    min-height: 60px;
+    &:before{
+      content:'';
+      display:block;
+      width:0;
+      height:0;
+      position:absolute;
+      border-top: 8px solid transparent;
+      border-bottom: 8px solid transparent;
+      border-right:8px solid $black-base;
+      left:-8px;
+      top:7px;
+    }
+  }
+  &.left {
+    right: calc(100% - -10px);
+    top: 0px;
+    min-height: 60px;
+    &:before{
+      content:'';
+      display:block;
+      width:0;
+      height:0;
+      position:absolute;
+      border-top: 8px solid transparent;
+      border-bottom: 8px solid transparent;
+      border-left:8px solid $black-base;
+      right:-8px;
+      top:7px;
+    }
+  }
+  &.up {
+    right: calc(100% - 200px);
+    top: -60px;
+    min-height: 60px;
+    &:before{
+      content: '';
+      display: block;
+      width: 0;
+      height: 0;
+      position: absolute;
+      border-top: 8px solid transparent;
+      border-bottom: 8px solid $black-base;
+      border-left: 8px solid transparent;
+      right: 50%;
+      bottom: -15px;
+      border-right: 8px solid transparent;
+      transform: rotate(180deg);
+    }
+  }
+  &.down {
+    right: calc(100% - 200px);
+    top: 30px;
+    min-height: 60px;
+    &:before{
+      content: '';
+      display: block;
+      width: 0;
+      height: 0;
+      position: absolute;
+      border-top: 8px solid transparent;
+      border-bottom: 8px solid $black-base;
+      border-left: 8px solid transparent;
+      right: 162px;
+      top: -15px;
+      border-right: 8px solid transparent;
+    }
+  }
 
   @include media($large) {
-    right: calc(100% - 285px);
     width: $tooltip-width-md;
+    &.right {
+      right: calc(100% - 405px);
+    }
+    &.left {
+      right: calc(100% - -10px);
+    }
+    &.up {
+      right: calc(100% - 200px);
+    }
+    &.down {
+      right: calc(100% - 200px);
+    }
   }
 
   &__item {
@@ -85,5 +167,6 @@ $tooltip-text-shadow-spread: 0 5px 10px;
     line-height: $tooltip-text-line-height;
     margin: 0;
     text-transform: none;
+    color: $white-base;
   }
 }
