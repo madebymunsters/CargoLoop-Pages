@@ -41,11 +41,11 @@ table {
           border-left: 3px solid $purple-base;
           color: $purple-base;
         }
-        > input[type="text"] {
-          height: 20px;
-          width: 40px;
-          font-size: 11px;
-          margin: 0;
+        > input {
+          height: 20px!important;
+          width: 40px!important;
+          font-size: 11px!important;
+          margin: 0!important;
         }
       }
     }
