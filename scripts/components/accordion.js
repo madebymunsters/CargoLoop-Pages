@@ -1,0 +1,1 @@
+$(document).ready(function(){$("#accordion > li > a").on("click",function(s){$(this).parent().has("ul")&&s.preventDefault(),$(this).hasClass("open")?$(this).hasClass("open")&&($(this).removeClass("open"),$(this).next("ul").slideUp(350)):($("#accordion li ul").slideUp(350),$("#accordion li a").removeClass("open"),$(this).next("ul").slideDown(350),$(this).addClass("open"))})});
